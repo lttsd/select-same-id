@@ -1,0 +1,37 @@
+{
+	"geode": "5.11.2",
+	"gd": {
+		"win": "2.2081"
+	},
+	"id": "opengl.select-same-id",
+	"name": "Select Same ID",
+	"version": "v1.0.0",
+	"developer": "opengl",
+	"description": "Selects every object with the same ID and editor layer as your selection.",
+	"tags": ["editor", "utility"],
+	"settings": {
+		"corner": {
+			"type": "string",
+			"name": "Button corner",
+			"description": "Corner of the editor where the button is placed. Applies the next time the editor opens.",
+			"default": "Top right",
+			"one-of": ["Top left", "Top right", "Bottom left", "Bottom right"]
+		},
+		"offset-x": {
+			"type": "int",
+			"name": "Offset X",
+			"description": "Horizontal offset of the button from its corner.",
+			"default": 0,
+			"min": -300,
+			"max": 300
+		},
+		"offset-y": {
+			"type": "int",
+			"name": "Offset Y",
+			"description": "Vertical offset of the button from its corner.",
+			"default": 0,
+			"min": -300,
+			"max": 300
+		}
+	}
+}
